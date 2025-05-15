@@ -1,73 +1,109 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Sachin Pandey | Portfolio</title>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+
+  <!-- ✅ Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Optional: FontAwesome and Google Fonts -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet" />
+   -->
+  <!-- Optional: Your own CSS (if needed) -->
+  <!-- <link rel="stylesheet" href="style.css"> -->
+
+  <style>
+    body {
+      font-family: 'Montserrat', sans-serif;
+    }
+  </style>
 </head>
-<body>
-  <header>
-    <div class="container header">
-      <h1 class="logo">Sachin Pandey</h1>
+<body class="bg-gray-50 text-gray-800">
+
+  <!-- Header -->
+  <header class="bg-white shadow-md">
+    <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-indigo-600">Sachin Pandey</h1>
       <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#contact">Contact</a></li>
+        <ul class="flex gap-6 text-gray-700 font-medium">
+          <li><a href="#about" class="hover:text-indigo-500">About</a></li>
+          <li><a href="#projects" class="hover:text-indigo-500">Projects</a></li>
+          <li><a href="#experience" class="hover:text-indigo-500">Experience</a></li>
+          <li><a href="#contact" class="hover:text-indigo-500">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <main class="container">
+  <!-- Main -->
+  <main class="container mx-auto px-6 py-12 space-y-16">
+
+    <!-- About Section -->
     <section id="about">
-      <h2>About Me</h2>
-      <p>Hi, I’m Sachin Pandey, an undergraduate Computer Science student at Texas State University, with a focus on software engineering and a minor in data analytics. I’m passionate about programming, machine learning, and technical research. Currently, I'm preparing for a summer internship in 2026 and honing my skills in Java, Python, MIPS assembly, and web development.
-
-        This portfolio showcases my projects, research, and technical skills as I continue to learn and grow in the tech industry.</p>
+      <h2 class="text-3xl font-semibold text-indigo-700 mb-4">About Me</h2>
+      <p class="text-gray-700 leading-relaxed">
+        Hi, I’m Sachin Pandey, an undergraduate Computer Science student at Texas State University, with a focus on software engineering and a minor in data analytics. I’m passionate about programming, machine learning, and technical research. Currently, I'm preparing for a summer internship in 2026 and honing my skills in Java, Python, MIPS assembly, and web development.
+        <br><br>
+        This portfolio showcases my projects, research, and technical skills as I continue to learn and grow in the tech industry.
+      </p>
     </section>
 
+    <!-- Projects Section -->
     <section id="projects">
-      <h2>Projects</h2>
-      <div class="project">
-        <h3>1. Research on Muscle Fatigue in Construction Workers</h3>
-        <p>Used IMU and EMG sensor data to analyze muscle activity during tasks like stooping, kneeling, and walking on sloped surfaces. Processed and analyzed data using MVN Analyze, EMG Motion Tool, SPSS, and Excel.</p>
-      </div>
-      <div class="project">
-        <h3>2. The Teacher Reuse Website Redesign</h3>
-        <p>Redesigned the UI for <a href="http://www.theteacherreuse.org" target="_blank">theteacherreuse.org</a>, improving user experience and increasing traffic by 20%.</p>
-      </div>
-      <div class="project">
-        <h3>3. Personal Portfolio Website (this site)</h3>
-        <p>Built with HTML, CSS, and JavaScript to showcase my projects and experience. Currently expanding with React and deployment workflows.</p>
+      <h2 class="text-3xl font-semibold text-indigo-700 mb-6">Projects</h2>
+
+      <div class="space-y-8">
+        <div class="bg-white p-6 rounded shadow">
+          <h3 class="text-xl font-bold mb-2">1. Research on Muscle Fatigue in Construction Workers</h3>
+          <p class="text-gray-700">Used IMU and EMG sensor data to analyze muscle activity during tasks like stooping, kneeling, and walking on sloped surfaces. Processed and analyzed data using MVN Analyze, EMG Motion Tool, SPSS, and Excel.</p>
+        </div>
+
+        <div class="bg-white p-6 rounded shadow">
+          <h3 class="text-xl font-bold mb-2">2. The Teacher Reuse Website Redesign</h3>
+          <p class="text-gray-700">
+            Redesigned the UI for 
+            <a href="http://www.theteacherreuse.org" class="text-indigo-600 hover:underline" target="_blank">theteacherreuse.org</a>,
+            improving user experience and increasing traffic by 20%.
+          </p>
+        </div>
+
+        <div class="bg-white p-6 rounded shadow">
+          <h3 class="text-xl font-bold mb-2">3. Personal Portfolio Website (this site)</h3>
+          <p class="text-gray-700">Built with HTML, CSS, and JavaScript to showcase my projects and experience. Currently expanding with React and deployment workflows.</p>
+        </div>
       </div>
     </section>
 
+    <!-- Experience Section -->
     <section id="experience">
-      <h2>Experience</h2>
-      <ul>
+      <h2 class="text-3xl font-semibold text-indigo-700 mb-4">Experience</h2>
+      <ul class="list-disc list-inside text-gray-700 space-y-2">
         <li><strong>Undergraduate Research Assistant</strong> – Texas State University (Jul 2024 – Present)</li>
         <li><strong>Web & Social Media Intern</strong> – The Teacher Reuse (Jan 2024 – May 2024)</li>
         <li><strong>Student Fellow</strong> – MathWorks Camp (Jun 2024)</li>
       </ul>
     </section>
 
+    <!-- Contact Section -->
     <section id="contact">
-      <h2>Contact Me</h2>
-      <p>Email: <a href="mailto:ihn10@txstate.edu">ihn10@txstate.edu</a></p>
-      <p>Phone: <a href="tel:+17372132760">+1 (737) 213-2760</a></p>
-      <p>LinkedIn: <a href="https://www.linkedin.com/in/sachin-pandey-50244a271/" target="_blank">linkedin.com/in/sachin-pandey</a></p>
-      <p>GitHub: <a href="https://github.com/" target="_blank">github.com/sachinpandey</a> (placeholder)</p>
+      <h2 class="text-3xl font-semibold text-indigo-700 mb-4">Contact Me</h2>
+      <div class="text-gray-700 space-y-2">
+        <p>Email: <a href="mailto:ihn10@txstate.edu" class="text-indigo-600 hover:underline">ihn10@txstate.edu</a></p>
+        <p>Phone: <a href="tel:+17372132760" class="text-indigo-600 hover:underline">+1 (737) 213-2760</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/sachin-pandey-50244a271/" target="_blank" class="text-indigo-600 hover:underline">linkedin.com/in/sachin-pandey</a></p>
+        <p>GitHub: <a href="https://github.com/" target="_blank" class="text-indigo-600 hover:underline">github.com/sachinpandey</a> (placeholder)</p>
+      </div>
     </section>
+
   </main>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2025 Sachin Pandey. All rights reserved.</p>
+  <!-- Footer -->
+  <footer class="bg-gray-100 py-4">
+    <div class="container mx-auto px-6 text-center text-sm text-gray-600">
+      &copy; 2025 Sachin Pandey. All rights reserved.
     </div>
   </footer>
 </body>
