@@ -1,38 +1,71 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Home | My Store</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sachin Pandey | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
     <div class="container header">
-      <a href="index.html"><img src="photos/logo.png" alt="Logo" class="logo" /></a>
+      <h1 class="logo">Sachin Pandey</h1>
       <nav>
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="shop.html">Shop</a></li>
-          <li><a href="blog.html">Blog</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-          <li><a href="#"><i class="fa-solid fa-cart-shopping"></i></a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
 
-  <!-- Page-specific content goes here -->
   <main class="container">
-    <h1>Welcome to My Store</h1>
-    <p>This is your homepage content.</p>
+    <section id="about">
+      <h2>About Me</h2>
+      <p>I'm a Computer Science undergraduate at Texas State University with a 4.0 GPA. I have hands-on experience in web development, data analysis, and sensor-based research. I'm passionate about using technology to solve real-world problems and currently preparing for internships in software engineering and data science.</p>
+    </section>
+
+    <section id="projects">
+      <h2>Projects</h2>
+      <div class="project">
+        <h3>1. Research on Muscle Fatigue in Construction Workers</h3>
+        <p>Used IMU and EMG sensor data to analyze muscle activity during tasks like stooping, kneeling, and walking on sloped surfaces. Processed and analyzed data using MVN Analyze, EMG Motion Tool, SPSS, and Excel.</p>
+      </div>
+      <div class="project">
+        <h3>2. The Teacher Reuse Website Redesign</h3>
+        <p>Redesigned the UI for <a href="http://www.theteacherreuse.org" target="_blank">theteacherreuse.org</a>, improving user experience and increasing traffic by 20%.</p>
+      </div>
+      <div class="project">
+        <h3>3. Personal Portfolio Website (this site)</h3>
+        <p>Built with HTML, CSS, and JavaScript to showcase my projects and experience. Currently expanding with React and deployment workflows.</p>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Experience</h2>
+      <ul>
+        <li><strong>Undergraduate Research Assistant</strong> – Texas State University (Jul 2024 – Present)</li>
+        <li><strong>Web & Social Media Intern</strong> – The Teacher Reuse (Jan 2024 – May 2024)</li>
+        <li><strong>Student Fellow</strong> – MathWorks Camp (Jun 2024)</li>
+      </ul>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <p>Email: <a href="mailto:ihn10@txstate.edu">ihn10@txstate.edu</a></p>
+      <p>Phone: <a href="tel:+17372132760">+1 (737) 213-2760</a></p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/sachin-pandey-50244a271/" target="_blank">linkedin.com/in/sachin-pandey</a></p>
+      <p>GitHub: <a href="https://github.com/" target="_blank">github.com/sachinpandey</a> (placeholder)</p>
+    </section>
   </main>
 
   <footer>
     <div class="container">
-      <p>&copy; 2025 My Store. All rights reserved.</p>
+      <p>&copy; 2025 Sachin Pandey. All rights reserved.</p>
     </div>
   </footer>
 </body>
