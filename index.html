@@ -48,14 +48,22 @@
   <main class="container mx-auto px-6 py-12 space-y-16">
 
     <!-- About Section -->
-    <section id="about">
-      <h2 class="text-3xl font-semibold text-indigo-700 dark:text-indigo-300">About Me</h2>
-
-      <p class="text-gray-700 leading-relaxed">
-        Hi, I’m Sachin Pandey, an undergraduate Computer Science student at Texas State University, with a focus on software engineering and a minor in data analytics. I’m passionate about programming, machine learning, and technical research. Currently, I'm preparing for a summer internship in 2026 and honing my skills in Java, Python, MIPS assembly, and web development.
-        <br><br>
-        This portfolio showcases my projects, research, and technical skills as I continue to learn and grow in the tech industry.
-      </p>
+    <section id="about" class="flex flex-col md:flex-row items-center gap-8">
+      <!-- Image -->
+      <div class="flex-shrink-0">
+        <img src="photos/My_Image.jpeg" alt="Sachin Pandey"
+             class="w-40 h-40 rounded-full shadow-md object-cover border-4 border-indigo-500">
+      </div>
+    
+      <!-- Text -->
+      <div>
+        <h2 class="text-3xl font-semibold text-indigo-700 dark:text-indigo-300 mb-4">About Me</h2>
+        <p class="text-gray-700 dark:text-gray-100 leading-relaxed">
+          Hi, I’m Sachin Pandey, an undergraduate Computer Science student at Texas State University, with a focus on software engineering and a minor in data analytics. I’m passionate about programming, machine learning, and technical research. Currently, I'm preparing for a summer internship in 2026 and honing my skills in Java, Python, MIPS assembly, and web development.
+          <br><br>
+          This portfolio showcases my projects, research, and technical skills as I continue to learn and grow in the tech industry.
+        </p>
+      </div>
     </section>
 
     <!-- Projects Section -->
@@ -106,7 +114,22 @@
     </section>
 
   </main>
-
+  <section id="githubSearch" class="bg-white dark:bg-gray-800 p-6 rounded shadow mt-12">
+    <h2 class="text-2xl font-semibold text-indigo-700 dark:text-indigo-300 mb-4 text-center">GitHub User Lookup</h2>
+    
+    <div class="flex flex-col sm:flex-row items-center gap-4 justify-center mb-4">
+      <input type="text" id="usernameInput" placeholder="Enter GitHub username"
+        class="border px-4 py-2 rounded w-64 dark:bg-gray-700 dark:text-white">
+      <button id="searchBtn"
+        class="bg-indigo-600 hover:bg-indigo-700 text-white px-4 py-2 rounded">
+        Search
+      </button>
+    </div>
+  
+    <div id="githubResult" class="text-center text-gray-700 dark:text-gray-100"></div>
+  </section>
+  
+  
   <!-- Footer -->
   <footer class="bg-gray-100 py-4">
     <div class="container mx-auto px-6 text-center text-sm text-gray-600">

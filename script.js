@@ -28,4 +28,36 @@ function typeWriter() {
 }
 typeWriter();
 
-  
+// GITHUB USER SEARCH
+const searchBtn = document.getElementById("searchBtn");
+const usernameInput = document.getElementById("usernameInput");
+const githubResult = document.getElementById("githubResult");
+
+searchBtn.addEventListener("click", async () => {
+  const username = usernameInput.value.trim();
+  if (!username) {
+    githubResult.innerHTML = `<p class="text-red-500">Please enter a username.</p>`;
+    return;
+  }
+
+  githubResult.innerHTML = "Loading...";
+
+  try {
+    const res = await fetch(`https://api.github.com/users/${username}`);
+    if (!res.ok) throw new Error("User not found");
+    const data = await res.json();
+
+    githubResult.innerHTML = `
+      <img src="${data.avatar_url}" alt="avatar" class="w-24 h-24 mx-auto rounded-full border mb-2">
+      <p><strong>Name:</strong> ${data.name || "N/A"}</p>
+      <p><strong>Username:</strong> <a href="${data.html_url}" class="text-indigo-500 hover:underline" target="_blank">@${data.login}</a></p>
+      <p><strong>Bio:</strong> ${data.bio || "No bio"}</p>
+      <p><strong>Repos:</strong> ${data.public_repos}</p>
+      <p><strong>Joined:</strong> ${new Date(data.created_at).toDateString()}</p>
+    `;
+  } catch (error) {
+    githubResult.innerHTML = `<p class="text-red-500">User not found or error fetching data.</p>`;
+    console.error(error);
+  }
+});
+
