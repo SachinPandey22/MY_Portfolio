@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 
 function Header() {
   const [text, setText] = useState('');
-  const fullText = "Sachin Pandey";
+  const fullText = "Saachin Pandey";
   const [isDark, setIsDark] = useState(false);
 
   useEffect(() => {
