@@ -19,7 +19,6 @@
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build"
-
   },
   "eslintConfig": {
     "extends": [
@@ -43,5 +42,4 @@
     "gh-pages": "^6.3.0"
   },
   "homepage": "https://sachinpandey22.github.io/MY_Portfolio"
-
 }

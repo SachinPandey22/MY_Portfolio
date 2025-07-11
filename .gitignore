@@ -1,2 +1,5 @@
-
-node_modules/.bin/
+node_modules
+build
+dist
+.env
+.DS_Store
