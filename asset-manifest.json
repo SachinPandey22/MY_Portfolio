@@ -1,14 +1,15 @@
 {
   "files": {
-    "main.css": "/MY_Portfolio/static/css/main.48b004d9.css",
-    "main.js": "/MY_Portfolio/static/js/main.b25d3060.js",
-    "static/media/My_Image.jpeg": "/MY_Portfolio/static/media/My_Image.7d1801761460d420db23.jpeg",
+    "main.css": "/MY_Portfolio/static/css/main.77fb59bb.css",
+    "main.js": "/MY_Portfolio/static/js/main.51f22a96.js",
+    "static/media/starfield-far.svg": "/MY_Portfolio/static/media/starfield-far.aa3e3b7bd77a23c8068e.svg",
+    "static/media/starfield-near.svg": "/MY_Portfolio/static/media/starfield-near.b69224716121a6964058.svg",
     "index.html": "/MY_Portfolio/index.html",
-    "main.48b004d9.css.map": "/MY_Portfolio/static/css/main.48b004d9.css.map",
-    "main.b25d3060.js.map": "/MY_Portfolio/static/js/main.b25d3060.js.map"
+    "main.77fb59bb.css.map": "/MY_Portfolio/static/css/main.77fb59bb.css.map",
+    "main.51f22a96.js.map": "/MY_Portfolio/static/js/main.51f22a96.js.map"
   },
   "entrypoints": [
-    "static/css/main.48b004d9.css",
-    "static/js/main.b25d3060.js"
+    "static/css/main.77fb59bb.css",
+    "static/js/main.51f22a96.js"
   ]
 }
