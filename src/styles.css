@@ -139,6 +139,57 @@ textarea:focus-visible {
   padding: 18px 16px;
 }
 
+.hero-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 220px;
+  gap: 16px;
+  align-items: start;
+}
+
+.hero-copy {
+  min-width: 0;
+}
+
+.hero-copy h1 {
+  font-size: clamp(2rem, 4vw, 2.6rem);
+  line-height: 1.1;
+}
+
+.hero-photo-panel {
+  margin: 0;
+  width: 100%;
+  justify-self: end;
+  align-self: start;
+  margin-top: -6px;
+}
+
+.hero-photo-frame {
+  border: none;
+  background: transparent;
+  padding: 0;
+  border-radius: 50%;
+  box-shadow: none;
+}
+
+.hero-photo {
+  width: 100%;
+  max-width: 220px;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center 16%;
+  display: block;
+  border: 1px solid #202020;
+  border-radius: 50%;
+}
+
+.hero-photo-caption {
+  margin-top: 8px;
+  font-size: 0.75rem;
+  color: var(--muted);
+  letter-spacing: 0.02em;
+  text-align: center;
+}
+
 .section-body h1,
 .section-body h2,
 .section-body h3,
@@ -470,5 +521,22 @@ textarea {
   .project-links-preview {
     display: grid;
     gap: 6px;
+  }
+
+  .hero-layout {
+    grid-template-columns: minmax(0, 1fr) 132px;
+    gap: 12px;
+    align-items: start;
+  }
+
+  .hero-photo {
+    max-width: 120px;
+  }
+}
+
+@media (min-width: 860px) {
+  .hero-layout {
+    grid-template-columns: minmax(0, 1fr) 260px;
+    gap: 24px;
   }
 }

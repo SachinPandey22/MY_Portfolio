@@ -9,6 +9,8 @@ export const navItems = [
 export const hero = {
   name: 'Sachin Pandey',
   location: 'San Marcos, TX',
+  photoUrl: `${process.env.PUBLIC_URL}/photos/profile.jpg`,
+  photoAlt: 'Sachin Pandey portrait',
   summary: [
     'Computer Science undergraduate focused on full-stack product engineering.',
     'Working on IMU/EMG research and building practical AI-driven web applications.'
