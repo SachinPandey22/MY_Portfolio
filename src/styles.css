@@ -180,6 +180,57 @@ textarea:focus-visible {
   line-height: 1.1;
 }
 
+.hero-title {
+  font-size: clamp(3rem, 6vw, 4.5rem);
+  line-height: 1.02;
+  margin-bottom: 8px;
+}
+
+.hero-location {
+  color: var(--muted);
+  font-size: 1.05rem;
+  margin-bottom: 12px;
+}
+
+.hero-typewrap {
+  margin: 10px 0 16px;
+  border: 1px solid var(--line);
+  background: #141414;
+  padding: 10px 12px;
+  display: grid;
+  gap: 6px;
+}
+
+.hero-type-line {
+  margin: 0;
+  color: #ffffff;
+  font-size: clamp(1.15rem, 2.2vw, 1.65rem);
+  font-weight: 700;
+}
+
+.hero-type-line span {
+  display: inline-block;
+  width: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  color: #f7fff2;
+}
+
+.type-line-1 span {
+  animation: typeLineOne 1.6s steps(20, end) forwards;
+}
+
+.type-line-2 span {
+  animation: typeLineTwo 1.8s steps(23, end) 1.65s forwards;
+}
+
+.hero-social-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 8px 0 12px;
+}
+
 .hero-photo-panel {
   margin: 0;
   width: 100%;
@@ -542,6 +593,24 @@ textarea {
   to {
     opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes typeLineOne {
+  from {
+    width: 0;
+  }
+  to {
+    width: 20ch;
+  }
+}
+
+@keyframes typeLineTwo {
+  from {
+    width: 0;
+  }
+  to {
+    width: 23ch;
   }
 }
 
