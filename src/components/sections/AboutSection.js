@@ -49,12 +49,11 @@ function AboutSection({ hero, education }) {
           </div>
         </div>
         {hero.photoUrl ? (
-          <figure className="hero-photo-panel">
+          <div className="hero-photo-panel">
             <div className="hero-photo-frame">
               <img src={hero.photoUrl} alt={hero.photoAlt || hero.name} className="hero-photo" />
             </div>
-            <figcaption className="hero-photo-caption">id://sachin_pandey</figcaption>
-          </figure>
+          </div>
         ) : null}
       </div>
     </section>
