@@ -40,6 +40,8 @@ function App() {
 
   return (
     <div className="app-shell">
+      <div className="starfield starfield-back" aria-hidden="true" />
+      <div className="starfield-front" aria-hidden="true" />
       <div className="screen-noise" aria-hidden="true" />
       <TerminalNav items={navItems} activeId={activeSection} onNavigate={handleNavigate} />
 
