@@ -95,7 +95,41 @@ export const projects = [
     //screenshot path (e.g., /images/projects/rag-assistant.png).
     imageUrl: `${process.env.PUBLIC_URL}/photos/Rag.png`,
     imageAlt: 'RAG assistant project preview'
-  }
+  },
+  { id: 'job-agent',
+    title: 'AutoApply Job Application Bot',
+    stack: ['Python', 'MCP Servers', 'Anthropic API', 'SQLite'],
+    details: [
+      'Personal AI-powered job application system built on Claude Code + MCP servers..',
+      'Imports any job posting from a URL and auto-fills applications with resume and cover letter generation.',
+      'Finds recruiters and drafts outreach emailsa.'
+    ],
+    //real project repository URL.
+    githubUrl: 'https://github.com/SachinPandey22/job-agent',
+    // real live demo URL, or keep null if unavailable.
+    demoUrl: 'null',
+    //screenshot path (e.g., /images/projects/rag-assistant.png).
+    imageUrl: `${process.env.PUBLIC_URL}/photos/job-agent.png`,
+    imageAlt: 'Job agent project preview'
+  },
+  { id: 'gmail_mcp',
+    title: 'Gmail MCP Integration',
+    stack: ['Python', 'Gmail API', 'Anthropic API', 'Gmail OAuth'],
+    details: [
+      'A local MCP (Model Context Protocol) server that gives Claude the ability to send emails',
+      'Integrated MCP servers with Gmail for automated email management.',
+      'manage drafts, send/delete emails and search Gmail — capabilities missing from Anthropics built-in Gmail connector.'
+
+
+    ],
+    //real project repository URL.
+    githubUrl: 'https://github.com/SachinPandey22/gmail_mcp_local_server',
+    // real live demo URL, or keep null if unavailable.
+    demoUrl: 'null',
+    //screenshot path (e.g., /images/projects/gmail_mcp.png).
+    imageUrl: `${process.env.PUBLIC_URL}/photos/gmail_mcp.png`,
+    imageAlt: 'Gmail MCP project preview'
+  },
 ];
 
 export const awards = [
