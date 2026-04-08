@@ -107,7 +107,7 @@ export const projects = [
     //real project repository URL.
     githubUrl: 'https://github.com/SachinPandey22/job-agent',
     // real live demo URL, or keep null if unavailable.
-    demoUrl: 'null',
+    demoUrl: null,
     //screenshot path (e.g., /images/projects/rag-assistant.png).
     imageUrl: `${process.env.PUBLIC_URL}/photos/job-agent.png`,
     imageAlt: 'Job agent project preview'
@@ -125,7 +125,7 @@ export const projects = [
     //real project repository URL.
     githubUrl: 'https://github.com/SachinPandey22/gmail_mcp_local_server',
     // real live demo URL, or keep null if unavailable.
-    demoUrl: 'null',
+    demoUrl: null,
     //screenshot path (e.g., /images/projects/gmail_mcp.png).
     imageUrl: `${process.env.PUBLIC_URL}/photos/gmail_mcp.png`,
     imageAlt: 'Gmail MCP project preview'
